@@ -20,6 +20,17 @@ function iniciar(){
     dibujarPersonaje();
     aparecerLimon();
 }
+
+function reiniciar(){
+    puntaje = 0;
+    vidas = 3;
+    velocidadCaida = 200;
+    mostrarEnSpan("txtPuntaje", puntaje);
+    mostrarEnSpan("txtVidas", vidas);
+    clearInterval(intervalo);
+    iniciar();
+}
+
 function dibujarSuelo(){
     ctx.fillStyle="blue";
     ctx.fillRect(0,canvas.height-ALTURA_SUELO,canvas.width,ALTURA_SUELO);
@@ -77,7 +88,7 @@ function detectarAtrapado(){
         }
         if(puntaje === 10){
             clearInterval(intervalo);
-            alert("TIENES LOS LIMONES, AHORA TE FALTA SAL Y TEQUILA");
+            alert("¡TIENES LOS LIMONES, AHORA TE FALTA SAL Y TEQUILA!");
         }
     }
 }
