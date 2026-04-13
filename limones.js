@@ -11,8 +11,10 @@ let limonX = Math.floor(Math.random()*(canvas.width-ANCHO_LIMON));
 let limonY = 0;
 let puntaje = 0;
 let vidas = 3;
+let velocidadCaida=600
 
 function iniciar(){
+    setInterval(bajarLimon,velocidadCaida)
     dibujarSuelo();
     dibujarPersonaje();
     aparecerLimon();
@@ -61,7 +63,7 @@ function detectarAtrapado(){
     if(limonX+ANCHO_LIMON > personajeX &&
         limonX < personajeX + ANCHO_PERSONAJE &&
         limonY + ALTURA_LIMON > personajeY &&
-        limonY < personajeX+ALTURA_PERSONAJE ){
+        limonY < personajeY + ALTURA_PERSONAJE ){
         //alert("ATRAPADO!!")
         aparecerLimon();
         puntaje=puntaje+1;
