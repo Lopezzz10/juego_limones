@@ -11,7 +11,7 @@ let limonX = Math.floor(Math.random()*(canvas.width-ANCHO_LIMON));
 let limonY = 0;
 let puntaje = 0;
 let vidas = 3;
-let velocidadCaida = 600
+let velocidadCaida = 200
 
 function iniciar(){
     setInterval(bajarLimon,velocidadCaida)
@@ -65,8 +65,18 @@ function detectarAtrapado(){
         limonY + ALTURA_LIMON > personajeY &&
         limonY < personajeY + ALTURA_PERSONAJE ){
         aparecerLimon();
-        puntaje=puntaje+1;
-        mostrarEnSpan("txtPuntaje",puntaje);
+        puntaje = puntaje + 1;
+        mostrarEnSpan("txtPuntaje", puntaje);
+
+        if(puntaje === 3){
+            velocidadCaida = 150;
+        }
+        if(puntaje === 6){
+            velocidadCaida = 100;
+        }
+        if(puntaje === 10){
+            alert("¡TIENES LOS LIMONES, AHORA TE FALTA SAL Y TEQUILA!");
+        }
     }
 }
 function detectarPiso(){
