@@ -88,7 +88,7 @@ function detectarAtrapado(){
         }
         if(puntaje === 10){
             clearInterval(intervalo);
-            alert("¡TIENES LOS LIMONES, AHORA TE FALTA SAL Y TEQUILA!");
+            alert("TIENES LOS LIMONES, AHORA TE FALTA SAL Y TEQUILA");
         }
     }
 }

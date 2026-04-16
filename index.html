@@ -1,26 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <link rel="stylesheet" href="limones.css">
-  <script src="utils.js"></script>
-<title>Caza Estrellas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atrapar Limones</title>
+    <link rel="stylesheet" href="limones.css">
+    <script src="utils.js"></script>
 </head>
 <body onload="iniciar()">
-  <div class="contenedor">
-    <h1>Atrapar Limones</h1>
-    <p>Si del cielo te caen limones ..... </p>
-    <h2>AUTOR: JOSE LOPEZ</h2>
-    <canvas id="areaJuego" width="600" height="400"></canvas>
-    <div class="panel">
-      <p>Puntaje: <span id="txtPuntaje">0</span></p>
-      <p>Vidas: <span id="txtVidas">3</span></p>
+
+    <div class="contenedor">
+        <header class="encabezado">
+            <h1>🍋 Atrapar Limones</h1>
+            <p>Si del cielo te caen limones... ¡atrápalos todos!</p>
+            <h2>AUTOR: JOSE LOPEZ</h2>
+        </header>
+
+        <div class="zona-juego">
+            <canvas id="areaJuego" width="600" height="400"></canvas>
+        </div>
+
+        <div class="panel">
+            <div class="card-info">
+                <p>Puntaje</p>
+                <span id="txtPuntaje">0</span>
+            </div>
+
+            <div class="card-info">
+                <p>Vidas</p>
+                <span id="txtVidas">3</span>
+            </div>
+        </div>
+
+        <div class="botones">
+            <button onclick="moverIzquierda()">⬅ Izquierda</button>
+            <button onclick="moverDerecha()">Derecha ➡</button>
+            <button onclick="reiniciar()">🔄 Reiniciar</button>
+        </div>
     </div>
-    <div class="botones">
-      <button onclick="moverIzquierda()">Izquierda</button>
-      <button onclick="moverDerecha()">Derecha</button>
-      <button onclick="reiniciar()">Reiniciar</button>
-    </div>
-  </div>
-  <script src="limones.js"></script>
+
+    <script src="limones.js"></script>
 </body>
 </html>
