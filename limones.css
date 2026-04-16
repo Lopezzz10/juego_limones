@@ -37,6 +37,20 @@ body {
     font-weight: normal;
 }
 
+.banner-imagen {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 5px 0;
+}
+
+.img-banner {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    image-rendering: pixelated;
+    filter: drop-shadow(0 0 12px rgba(250, 204, 21, 0.7));
+}
+
 .zona-juego {
     margin: 25px 0;
 }
