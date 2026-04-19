@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atrapar Limones</title>
+    <title>🍋 LEMON CATCHER — ARCADE</title>
     <link rel="stylesheet" href="limones.css">
     <script src="utils.js"></script>
 </head>
 <body onload="iniciar()">
 
     <div class="contenedor">
-        <header class="encabezado">
 
+        <header class="encabezado">
             <div class="banner-imagen">
-                <img 
-                    src="LIMON.png" 
-                    alt="Limón pixel art" 
+                <img
+                    src="LIMON.png"
+                    alt="Limón pixel art"
                     class="img-banner"
                 >
             </div>
-
-            <h1>🍋 Atrapar Limones</h1>
-            <p>Si del cielo te caen limones... ¡atrápalos todos!</p>
-            <h2>AUTOR: JOSE LOPEZ</h2>
+            <h1>🍋 ATRAPAR LIMONES</h1>
+            <p>&gt;&gt; SI DEL CIELO TE CAEN LIMONS...</p>
+            <h2>BY: JOSE LOPEZ</h2>
         </header>
 
         <div class="zona-juego">
@@ -31,23 +30,26 @@
 
         <div class="panel">
             <div class="card-info">
-                <p>Puntaje</p>
+                <p>SCORE</p>
                 <span id="txtPuntaje">0</span>
             </div>
-
             <div class="card-info">
-                <p>Vidas</p>
+                <p>LIVES</p>
                 <span id="txtVidas">3</span>
             </div>
         </div>
 
         <div class="botones">
-            <button onclick="moverIzquierda()">⬅ Izquierda</button>
-            <button onclick="moverDerecha()">Derecha ➡</button>
-            <button onclick="reiniciar()">🔄 Reiniciar</button>
+            <button onclick="moverIzquierda()">◀ LEFT</button>
+            <button onclick="moverDerecha()">RIGHT ▶</button>
+            <button onclick="reiniciar()">↺ RESET</button>
         </div>
+
+        <p class="insert-coin">▶▶ INSERT COIN TO PLAY ◀◀</p>
+
     </div>
 
     <script src="limones.js"></script>
+
 </body>
 </html>
