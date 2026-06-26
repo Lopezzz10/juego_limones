@@ -159,7 +159,7 @@ body::after {
   content: '';
   position: absolute;
   inset: -6px;
-  border: var(--pixel) solid rgba(57,255,20,.3);
+  border: var(--pixel) solid rgba(126, 20, 255, 0.3);
   pointer-events: none;
 }
 
@@ -268,7 +268,7 @@ canvas {
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: transform .08s steps(1), background .08s steps(1);
-  box-shadow: 4px 4px 0 var(--neon-yellow), 0 0 12px rgba(255,230,0,.25);
+  box-shadow: 4px 4px 0 var(--neon-yellow), 0 0 12px rgba(0, 106, 255, 0.25);
 }
 
 .botones button:hover {
@@ -290,7 +290,7 @@ canvas {
 .botones button:nth-child(3):hover {
   background: var(--neon-pink);
   color: #000;
-  box-shadow: 4px 4px 0 rgba(255,45,120,.5), 0 0 20px rgba(255,45,120,.5);
+  box-shadow: 4px 4px 0 rgba(255, 94, 45, 0.5), 0 0 20px rgba(255,45,120,.5);
 }
 
 /* Insert coin */
